@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>นิราศวัดเจ้าฟ้า — ตามรอยลายแทงยาอายุวัฒนะ</title>
+<meta name="description" content="เรื่องเล่าแบบเลื่อนจอจากนิราศวัดเจ้าฟ้าของสุนทรภู่">
+<meta name="theme-color" content="#0b1020">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Trirong:ital,wght@0,300;0,400;0,600;1,400&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- หน้าเปิด -->
+<div id="gate" class="gate">
+  <div class="gate-inner">
+    <p class="gate-kicker" id="gByline"></p>
+    <h1 class="gate-title" id="gTitle"></h1>
+    <p class="gate-sub" id="gSub"></p>
+    <div class="gate-btns">
+      <button id="startSound" class="btn btn-gold">เริ่มเดินทาง · เปิดเสียง</button>
+      <button id="startQuiet" class="btn btn-ghost">อ่านแบบเงียบ</button>
+    </div>
+    <p class="gate-hint">แนะนำให้ใส่หูฟัง · เลื่อนลงเพื่อดำเนินเรื่อง</p>
+  </div>
+</div>
+
+<!-- แถบบนสุด -->
+<header id="hud" class="hud">
+  <div class="hud-bar"><i id="hudFill"></i></div>
+  <button id="menuBtn" class="hud-chap" aria-label="เลือกบท">
+    <span id="hudNo">—</span><span id="hudTitle">นิราศวัดเจ้าฟ้า</span>
+  </button>
+  <span id="hudDay" class="hud-day"></span>
+  <button id="muteBtn" class="hud-mute" aria-label="เปิด/ปิดเสียง">🔇</button>
+</header>
+<nav id="menu" class="menu" hidden></nav>
+
+<main id="story"></main>
+
+<div id="flash" class="flash"></div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
